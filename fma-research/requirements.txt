@@ -1,4 +1,17 @@
+certifi==2020.6.20
+chardet==3.0.4
 flake8==3.8.3
+idna==2.10
 mccabe==0.6.1
+numpy==1.19.1
+pandas==1.1.1
 pycodestyle==2.6.0
+pydot==1.4.1
 pyflakes==2.2.0
+pyparsing==2.4.7
+python-dateutil==2.8.1
+python-dotenv==0.14.0
+pytz==2020.1
+requests==2.24.0
+six==1.15.0
+urllib3==1.25.10
