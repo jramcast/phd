@@ -343,7 +343,12 @@ def build_sample_loader(audio_dir, Y, loader):
                 tids = np.array(self.tids[batch_current:batch_current+batch_size])
 
             for i, tid in enumerate(tids):
-                self.X[i] = self.loader.load(get_audio_path(audio_dir, tid))
+                try:
+                    # Probably not the best solution: if file is corrupted: all features are 0
+                    self.X[i] = self.loader.load(get_audio_path(audio_dir, tid))
+                except Exception:
+                    self.X[i] = np.zeros(shape=(self.loader.shape))
+
                 self.Y[i] = Y.loc[tid]
 
             with self.lock2:
