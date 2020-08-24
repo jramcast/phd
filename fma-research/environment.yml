@@ -1,0 +1,14 @@
+name: fma
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - numpy
+  - scikit-learn
+  - python-dotenv
+  - pydot
+  - requests
+  - tensorflow
+prefix: /home/jairamir/miniconda3/envs/fma
+
