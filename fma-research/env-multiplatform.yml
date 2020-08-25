@@ -10,5 +10,6 @@ dependencies:
   - pydot
   - requests
   - tensorflow
+  - flake8
 prefix: /home/jairamir/miniconda3/envs/fma
 
